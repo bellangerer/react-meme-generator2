@@ -9,3 +9,10 @@ function Header() {
     </header>
   );
 }
+// here is the function {useState}
+function MemeGenerator() {
+// added const (variable that can't be changed)
+  const [topText, setTopText] = useState('');
+  const [bottomText, setBottomText] = useState('');
+  const [memeImageUrl, setMemeImageUrl] = useState('https://memegen.link/'),
+};
