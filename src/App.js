@@ -11,8 +11,24 @@ function Header() {
 }
 // here is the function {useState}
 function MemeGenerator() {
-// added const (variable that can't be changed)
+  // added const (variable that can't be changed)
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
-  const [memeImageUrl, setMemeImageUrl] = useState('https://memegen.link/'),
-};
+  const [memeImageUrl, setMemeImageUrl] = useState('https://memegen.link/');
+
+  // this is the const function to generate the text, picture etc.
+  const generateMeme = () => {};
+
+  return (
+    <div className="meme-generator">
+      <img src={memeImageUrl} alt="Meme" />
+
+      <input
+        type="text"
+        placeholder="Top text"
+        value={topText}
+        onChange={(e) => setTopText(e.target.value)}
+      />
+    </div>
+  );
+}
