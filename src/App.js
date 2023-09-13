@@ -1,23 +1,11 @@
-import './App.css';
-import logo from './logo.svg';
+// used {useState} for adding top and bottom text and also a picture/meme
+import React, { useState } from 'react';
 
-export default function App() {
+// added <header> to show it on the webpage
+function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <h1>Meme Generator</h1>44
+    </header>
   );
 }
