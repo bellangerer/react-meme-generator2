@@ -21,13 +21,33 @@ function MemeGenerator() {
 
   return (
     <div className="meme-generator">
-      <img src={memeImageUrl} alt="Meme" />
+      <h1>Meme Generator</h1>
+
+      <label htmlFor="topText">Top text</label>
 
       <input
         type="text"
-        placeholder="Top text"
+        id="topText"
         value={topText}
         onChange={(e) => setTopText(e.target.value)}
+      />
+
+      <label htmlFor="bottomText">Bottom Text</label>
+
+      <input
+        type="text"
+        id="bottomText"
+        value={bottomText}
+        onChange={(e) => setBottomText(e.target.value)}
+      />
+
+      <label htmlFor="memeTemplate">Meme template</label>
+
+      <input
+        type="text"
+        id="memeTemplate"
+        value={memeTemplate}
+        onChange={(e) => setMemeTemplate(e.target.value)}
       />
     </div>
   );
