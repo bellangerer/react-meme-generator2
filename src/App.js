@@ -7,6 +7,7 @@ const styles = {
     backgroundColor: '#333',
     color: '#fff',
     padding: '10px',
+    margin: '#717171',
   },
   backgroundColor: {
     color: '#717171',
